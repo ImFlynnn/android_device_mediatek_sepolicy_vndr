@@ -174,3 +174,6 @@ allow system_app mtk_audiohal_data_file:file create_file_perms;
 # Purpose: Allow atmwifimeta apk to use HIDL and access loghidlvendorservice
 allow system_app mtk_hal_log_hwservice:hwservice_manager find;
 binder_call(system_app, loghidlvendorservice);
+
+# Allow system_app 
+allow system_app proc_pagetypeinfo:file rw_file_perms;
